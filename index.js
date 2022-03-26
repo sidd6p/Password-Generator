@@ -34,16 +34,16 @@ function getSpecial() {
 function getPassword() {
     let passwordContent = [];
     let length = getLength();
-    let generator = [getLowerChar(), getUpperChar(), getDigit(), getSpecial()];
+    let generator = [getLowerChar, getUpperChar, getDigit, getSpecial];
 
-    passwordContent.push(String.fromCharCode(generator[0]));
-    passwordContent.push(String.fromCharCode(generator[1]));
-    passwordContent.push(String.fromCharCode(generator[2]));
-    passwordContent.push(String.fromCharCode(generator[3]));
+    passwordContent.push(String.fromCharCode(generator[0]()));
+    passwordContent.push(String.fromCharCode(generator[1]()));
+    passwordContent.push(String.fromCharCode(generator[2]()));
+    passwordContent.push(String.fromCharCode(generator[3]()));
 
     for (let i = 0; i < length - 4; i++) {
         let index = getRandom(0, 3);
-        passwordContent.push(String.fromCharCode(generator[index]));
+        passwordContent.push(String.fromCharCode(generator[index]()));
     }
 
     passwordContent = passwordContent.sort(()=>Math.random()-0.5);
