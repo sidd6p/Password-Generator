@@ -49,27 +49,30 @@ hr {
     margin: 50px 0px;
 }
 
-#pswd-1, #pswd-3 {
-    float: left;
+
+#pswd-box {
     text-align: center;
+    color: #131b25;
+    font-weight: bolder;
+} 
+
+#pswd-1, #pswd-3 {
+    background: #273549;
     width: 230px;
     height: 25px;
+    float: left;
     padding: 5px 10px;
-    background: #273549;
-    color: #131b25;
     border-radius: 6px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 #pswd-2, #pswd-4 {
-    float: right;
-    text-align: center;
+    background: #273549;
     width: 230px;
     height: 25px;
+    float: right;
     padding: 5px 10px;
-    background: #273549;
-    color: #131b25;
     border-radius: 6px;
     margin-top: 5px;
     margin-bottom: 5px;
