@@ -61,7 +61,6 @@ hr {
     padding: 5px 10px;
     border-radius: 6px;
     margin-top: 5px;
-    margin-bottom: 5px;
     float: left;
 }
 
@@ -72,25 +71,25 @@ hr {
     padding: 5px 10px;
     border-radius: 6px;
     margin-top: 5px;
-    margin-bottom: 5px;
     float: right;
 }
 
 
 #pswd-content-1, #pswd-content-3, #pswd-content-2, #pswd-content-4 {
+    padding-top: 4px;
     float: left;
 }
 
 .copy-ele {
+    padding-right: 0px;
     float: right;
-    opacity: .5;
-    margin-bottom: 100px;
+    opacity: .7;
     visibility: hidden;
-    margin-bottom: 1000px;
 }
 
-#copt-btn-ele {
+#copy-btn-ele {
     color: #D5D4D8;
     background: none;
-    margin: 0px 0px 10px 0px;
+    border: none;
+    padding: 0px;
 }
