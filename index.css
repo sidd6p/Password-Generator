@@ -2,6 +2,29 @@ body {
     margin: 0px;
 }
 
+button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #10B981;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0px 0px;
+}
+
+hr {
+    border: 1px solid #2F3E53;
+    margin: 50px 0px;
+}
+
 #main-ele {
     border: 2px solid #00a870;
     background-color: #1F2937;
@@ -16,25 +39,6 @@ body {
     padding: 50px;
 }
 
-button {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    background-color: #10B981;
-    border: none;
-    border-radius: 4px;
-    padding: 10px;
-    color: white;
-}
-
-
-h1 {
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 40px;
-    margin: 0px 0px;
-}
-
 #text-2 {
     color: #00a870;
 }
@@ -44,12 +48,6 @@ h1 {
     margin: 10px 0px 30px 0px;
 }
 
-hr {
-    border: 1px solid #2F3E53;
-    margin: 50px 0px;
-}
-
-
 #pswd-box {
     text-align: center;
     color: #131b25;
@@ -58,23 +56,41 @@ hr {
 
 #pswd-1, #pswd-3 {
     background: #273549;
-    width: 230px;
+    width: 250px;
     height: 25px;
-    float: left;
     padding: 5px 10px;
     border-radius: 6px;
     margin-top: 5px;
     margin-bottom: 5px;
+    float: left;
 }
 
 #pswd-2, #pswd-4 {
     background: #273549;
-    width: 230px;
+    width: 250px;
     height: 25px;
-    float: right;
     padding: 5px 10px;
     border-radius: 6px;
     margin-top: 5px;
     margin-bottom: 5px;
+    float: right;
 }
 
+
+#pswd-content-1, #pswd-content-3, #pswd-content-2, #pswd-content-4 {
+    float: left;
+}
+
+.copy-ele {
+    float: right;
+    opacity: .5;
+    margin-bottom: 100px;
+    visibility: hidden;
+    margin-bottom: 1000px;
+}
+
+#copt-btn-ele {
+    color: #D5D4D8;
+    background: none;
+    margin: 0px 0px 10px 0px;
+}

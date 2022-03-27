@@ -1,8 +1,9 @@
 let pswdBox = document.getElementById("pswd-box");
-let pswd1 = document.getElementById("pswd-1");
-let pswd2 = document.getElementById("pswd-2");
-let pswd3 = document.getElementById("pswd-3");
-let pswd4 = document.getElementById("pswd-4");
+let copyEl = document.getElementsByClassName("copy-ele");
+let pswd1 = document.getElementById("pswd-content-1");
+let pswd2 = document.getElementById("pswd-content-2");
+let pswd3 = document.getElementById("pswd-content-3");
+let pswd4 = document.getElementById("pswd-content-4");
 
 
 function getRandom(min, max) {
@@ -59,9 +60,29 @@ function getPassword() {
 
 
 function fillPasswords() {
-    pswd1.innerText = getPassword();
-    pswd2.innerText = getPassword();
-    pswd3.innerText = getPassword();
-    pswd4.innerText = getPassword();
+    pswd1.textContent = getPassword();
+    pswd2.textContent = getPassword();
+    pswd3.textContent = getPassword();
+    pswd4.textContent = getPassword();
     pswdBox.style.color = "#00a870";
+    copyEl[0].style.visibility = "visible";
+    copyEl[1].style.visibility = "visible";
+    copyEl[2].style.visibility = "visible";
+    copyEl[3].style.visibility = "visible";
+}
+
+function copyPassword1(){
+    navigator.clipboard.writeText(pswd1.textContent);
+}
+
+function copyPassword2(){
+    navigator.clipboard.writeText(pswd2.textContent);
+}
+
+function copyPassword3(){
+    navigator.clipboard.writeText(pswd3.textContent);
+}
+
+function copyPassword4(){
+    navigator.clipboard.writeText(pswd4.textContent);
 }
