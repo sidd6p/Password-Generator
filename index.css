@@ -87,7 +87,7 @@ hr {
     visibility: hidden;
 }
 
-#copy-btn-ele {
+#copy-btn-ele-1, #copy-btn-ele-2, #copy-btn-ele-3, #copy-btn-ele-4 {
     color: #D5D4D8;
     background: none;
     border: none;

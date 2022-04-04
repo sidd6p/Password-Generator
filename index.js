@@ -4,6 +4,19 @@ let pswd1 = document.getElementById("pswd-content-1");
 let pswd2 = document.getElementById("pswd-content-2");
 let pswd3 = document.getElementById("pswd-content-3");
 let pswd4 = document.getElementById("pswd-content-4");
+let btnEl = document.getElementById("btn-ele");
+let copyBtnEle1 = document.getElementById("copy-btn-ele-1");
+let copyBtnEle2 = document.getElementById("copy-btn-ele-2");
+let copyBtnEle3 = document.getElementById("copy-btn-ele-3");
+let copyBtnEle4 = document.getElementById("copy-btn-ele-4");
+
+
+btnEl.addEventListener("click", fillPasswords);
+copyBtnEle1.addEventListener("click", copyPassword1);
+copyBtnEle2.addEventListener("click", copyPassword2);
+copyBtnEle3.addEventListener("click", copyPassword3);
+copyBtnEle4.addEventListener("click", copyPassword4);
+
 
 
 function getRandom(min, max) {
