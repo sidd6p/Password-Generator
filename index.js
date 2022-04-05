@@ -85,21 +85,25 @@ function fillPasswords() {
 }
 
 function copyPassword1(){
-    navigator.clipboard.writeText(pswd1.textContent);
-    alert(pswd1.textContent + " copied to clipboard");
+    navigator.clipboard.writeText(pswd1.textContent).then(() => {
+        alert(pswd1.textContent + " copied to clipboard");
+    })
 }
 
 function copyPassword2(){
-    navigator.clipboard.writeText(pswd2.textContent);
-    alert(pswd2.textContent + " copied to clipboard");
+    navigator.clipboard.writeText(pswd2.textContent).then(() => {
+        alert(pswd2.textContent + " copied to clipboard");
+    })
 }
 
 function copyPassword3(){
-    navigator.clipboard.writeText(pswd3.textContent);
-    alert(pswd3.textContent + " copied to clipboard");
+    navigator.clipboard.writeText(pswd3.textContent).then(() => {
+        alert(pswd3.textContent + " copied to clipboard");
+    })
 }
 
 function copyPassword4(){
-    navigator.clipboard.writeText(pswd4.textContent);
-    alert(pswd4.textContent + " copied to clipboard");
+    navigator.clipboard.writeText(pswd4.textContent).then(() => {
+        alert(pswd4.textContent + " copied to clipboard");
+    })
 }
